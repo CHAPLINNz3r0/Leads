@@ -97,7 +97,7 @@ Diga ao usuário em tom direto, profissional e em português exatamente o que vo
     }));
 
     const response = await ai.models.generateContent({
-      model: 'gemini-3.8-flash',
+      model: 'gemini-2.5-flash-lite',
       contents,
       config: {
         systemInstruction,

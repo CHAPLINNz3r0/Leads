@@ -49,7 +49,7 @@ Estilos:
 Retorne apenas um JSON com um array de strings "pitches".`;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-3.8-flash',
+      model: 'gemini-2.5-flash-lite',
       contents: prompt,
       config: {
         responseMimeType: 'application/json',

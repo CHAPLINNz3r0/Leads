@@ -56,7 +56,7 @@ Extraia:
 Responda em formato JSON.`;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-3.8-flash',
+      model: 'gemini-2.5-flash-lite',
       contents: {
         parts: [
           {
@@ -189,7 +189,7 @@ Diga ao usuário em tom direto, profissional e em português exatamente o que vo
     }));
 
     const response = await ai.models.generateContent({
-      model: 'gemini-3.8-flash',
+      model: 'gemini-2.5-flash-lite',
       contents,
       config: {
         systemInstruction,
@@ -249,7 +249,7 @@ Estilos:
 Retorne apenas um JSON com um array de strings "pitches".`;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-3.8-flash',
+      model: 'gemini-2.5-flash-lite',
       contents: prompt,
       config: {
         responseMimeType: 'application/json',
